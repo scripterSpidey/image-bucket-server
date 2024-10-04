@@ -31,12 +31,11 @@ const startServer = async () => {
     app.use(cookieParser());
 
     app.get('/', (req, res) => {
-        console.log('body: ',req.body)
         res.send('You are all set')
     })
 
     app.use('/',(req,res,next)=>{
-        console.log(req.headers);
+        console.log('body: ',req.body);
         next()
     })
     app.use('/user',userRouter)

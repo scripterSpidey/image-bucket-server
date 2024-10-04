@@ -3,5 +3,9 @@ export interface UserSchema {
     email:string,
     password:string,
     verified?:boolean,
-    otp:number
+    otp:number,
+    images?:{
+        url:string,
+        title:string
+    }[]
 }

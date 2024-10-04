@@ -16,6 +16,6 @@ export type LoginUserType ={
 }
 
 export type UserPayload ={
-    _id:string,
+    userId:string,
     email:string
 }

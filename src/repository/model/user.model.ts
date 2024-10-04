@@ -21,7 +21,11 @@ const userSchema : Schema = new Schema<UserSchema>({
     },
     otp:{
         type:Number
-    }
+    },
+    images:[{
+        url:String,
+        title:String
+    }]
 })
 
 export const UserModel = mongoose.model<UserSchema>('users',userSchema)

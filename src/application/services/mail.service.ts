@@ -13,7 +13,7 @@ export const sendOTP = async(email:string,otp:number)=>{
     const mailOptions = {
         from: "Image Bucket",
         to: email,
-        subject: "Verify yout email",
+        subject: "Verify your email",
         html: `
         <h1 style="color: blue; text-align: center;">Welcome</h1>
         <p style="font-size: 16px; color: #333; text-align: center;">Please enter the OTP provided to register on our website.</p>
